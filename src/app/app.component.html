@@ -1,5 +1,5 @@
 <div class="row jusify-content-center">
-  <h2>Pipes</h2>
+  <h2>{{title | titlecase}}</h2>
   <div class="col-auto">
     <table class="mx-2 table table-bordered table-striped">
       <tbody>
@@ -9,11 +9,11 @@
         </tr>
         <tr>
           <th>BirtData</th>
-          <td>{{birtData}}</td>
+          <td>{{birtData | date:'dd-MM-yyyy HH:mm'}}</td>
         </tr>
         <tr>
           <th>Height</th>
-          <td>{{height}}</td>
+          <td>{{salary | currency: 'EUR':'symbol':'3.2-3'}}</td>
         </tr>
       </tbody>
     </table>
